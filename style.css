@@ -1,0 +1,501 @@
+body {
+    margin: 0;
+    font-family: "Alegreya", serif;
+}
+
+:root {
+    --main-color: #8e7754;
+    --paragraph-color: #686868;
+    --main-width: 80%;
+}
+
+
+/* First Class */
+
+.First-Class {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-image: url("images/drew-coffman-1872.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Fixed-Right */
+
+.Fixed-Right {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    text-align: center;
+    line-height: 2.5rem;
+    width: 40px;
+    font-size: 20px;
+    height: 80px;
+    background-color: white;
+    color: #686868;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.Gear:hover {
+    color: #0077b5;
+    position: relative;
+}
+
+.Gear:hover::after {
+    content: "See Demo Sites";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 400;
+    width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 35px;
+    color: #686868;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.Cart:hover {
+    color: #0077b5;
+}
+
+.Cart:hover::after {
+    content: "Buy Engage Now!";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 400;
+    width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    color: #686868;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+
+/* Navigation  */
+
+.Parent-Nav {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation {
+    width: var(--main-width);
+    margin: auto;
+}
+
+.navigation img {
+    width: 180px;
+}
+
+.navigation ul {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    float: right;
+}
+
+.navigation ul li {
+    text-align: center;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    background-color: white;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-align: left;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #353330;
+}
+
+.navigation a:hover {
+    color: var(--main-color);
+}
+
+
+/* Main Header Description */
+
+.Main-Header {
+    width: 100%;
+    height: auto;
+    padding-bottom: 300px;
+}
+
+.Main-Header {
+    width: 100%;
+    text-align: center;
+    margin-top: 200px;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    word-spacing: 1px;
+}
+
+.Main-Header button {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    width: 130px;
+    height: 60px;
+    border-radius: 7%;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.button-Learn {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.button-Learn:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+.button-Contact {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.button-Contact:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+
+/* Space */
+
+.Space {
+    width: 100%;
+    height: auto;
+    margin: 1000px;
+}
+
+
+/* Who WE Are Section */
+
+.Who-We {
+    width: var(--main-width);
+    height: auto;
+    margin: auto;
+    margin-bottom: 200px;
+    font-family: "Alegreya Sans";
+    font-size: 20px;
+}
+
+.Who-We img {
+    width: 45%;
+    display: inline-block;
+}
+
+.Who-We-Description {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 40px;
+    line-height: 1.86em;
+}
+
+.Who-We-Description p {
+    color: var(--paragraph-color);
+}
+
+.Who-We-Description img {
+    margin: auto;
+    width: 60px;
+}
+
+.Deafult-Space {
+    padding: 370px;
+}
+
+.Deafult-Space2 {
+    padding: 470px;
+}
+
+
+/* Our Location */
+
+.Our-Location-Parent {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.Our-Location {
+    width: var(--main-width);
+    margin: auto;
+    margin-bottom: 200px;
+    font-family: "Alegreya Sans";
+    font-weight: 50;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 54px;
+}
+
+.Our-Location-Desc {
+    margin-top: 60px;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    line-height: 1.86em;
+}
+
+.Our-Location img {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.Our-Location p {
+    color: var(--paragraph-color);
+}
+
+
+/* Our-Baking */
+
+.Our-Baking {
+    width: var(--main-width);
+    margin: auto;
+    margin-bottom: 150px;
+    text-align: center;
+    line-height: 1.86em;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+}
+
+.Our-Baking p {
+    color: var(--paragraph-color);
+}
+
+.Our-Baking-Images {
+    width: 32%;
+    margin-right: 16px;
+    height: auto;
+    float: left;
+    clear: right;
+}
+
+.Our-Baking-Images img {
+    width: 100%;
+}
+
+.Our-Baking-Images p {
+    color: var(--paragraph-color);
+}
+
+
+/* Contact Information */
+
+.Contact-Information-Parent {
+    width: 100%;
+    height: 750px;
+    background-color: #f8f8f8;
+}
+
+.Contact-Information {
+    width: var(--main-width);
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 54px;
+}
+
+.Contact-Information img {
+    width: 50%;
+    float: right;
+}
+
+.Contact-Info_details {
+    width: 40%;
+    float: left;
+    font-family: "Alegreya Sans";
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+.Contact-Info_details h2 {
+    font-size: 32px;
+    font-family: "Alegreya";
+}
+
+.Contact-Info_details p {
+    color: var(--paragraph-color);
+}
+
+.Location-Map {
+    margin: auto;
+    width: 50%;
+    float: right;
+    clear: right;
+}
+
+.Contact-Info_details img {
+    margin: auto;
+    width: 50px;
+    float: left;
+}
+
+
+/* Footer Links */
+
+.Footer-Links {
+    width: 100%;
+    background-color: #403d38;
+    height: auto;
+}
+
+.Footer-Links-Text {
+    width: var(--main-width);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Footer-Links-Text-Details {
+    width: 22%;
+    margin: auto;
+    height: 350px;
+}
+
+.Footer-Links-Text-Details h4 {
+    margin-top: 50px;
+    color: white;
+}
+
+.Footer-Links-Text-Details p {
+    color: #969696;
+    font-size: 16px;
+}
+
+.Footer-Links-Text-Details ul {
+    margin-left: -40px;
+    list-style-type: none;
+}
+
+.arrow {
+    border: solid #969696;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.Footer-Links-Text-Details li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.Footer-Links-Text-Details td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.Mab-Background {
+    background-image: url(images/map2.png);
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* Footer-Social-Media */
+
+.Footer-Social-Media {
+    width: 100%;
+    background-color: #353330;
+    margin: 120px auto 0 0;
+    height: 400px;
+}
+
+.Footer-Social-Media-Details {
+    margin: auto;
+    width: var(--main-width);
+    text-align: center;
+    color: #969696;
+}
+
+.Footer-Social-Media-Details img {
+    margin-top: 50px;
+}
+
+.Footer-Social-Media-Details i {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-right: 15px;
+    background-color: #403d38;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.FaHover:hover {
+    color: white;
+    background-color: #1877f2;
+}
+
+.GoHover:hover {
+    color: white;
+    background-color: #db4437;
+}
+
+.LiHover:hover {
+    color: white;
+    background-color: #0077b5;
+}
+
+.TwHover:hover {
+    color: white;
+    background-color: #1da1f2;
+}
